@@ -7,7 +7,7 @@ const fs = require('fs');
 fs.readdir('.', function(err, files) {
   if (err) throw err;
   var dirs = files.filter(function(file) {
-    return fs.statSync(file).isDirectory() && file !== '.git'; //絞り込み
+    return fs.statSync(file).isDirectory() && file !== '.git';
   });
   dirs.map(d=>`./${d}`).forEach(rekkyo);
 });
