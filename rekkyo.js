@@ -3,6 +3,7 @@
 const URL = 'https://cdn.rawgit.com/simiraaaa/datastore/master/';
 console.log('# データストア');
 console.log('`' + URL + '`');
+console.log('jsファイルの場合ファイル名と同名のグローバル変数に展開する');
 const fs = require('fs');
 fs.readdir('.', function(err, files) {
   if (err) throw err;
